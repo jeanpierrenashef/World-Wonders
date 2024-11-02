@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./wonder.css" rel="stylesheet"/>
+    <link href="./base.css" rel="stylesheet"/>
+    <title>Wonder Details</title>
+    
+</head>
+<body>
+    <section class="wonder-page">
+        <h1 id="wonder-name"></h1>
+        <div class="center-info">
+            <p id="wonder-location"></p>
+            <p id="wonder-build-year"></p>
+            <p id="wonder-time-period"></p>
+            <p id="wonder-summary"></p>
+        </div>
+        <div class="link-container">
+            <div id="wiki-link-container" class="button wiki-button"></div>
+            <div id="brit-link-container" class="button brit-button"></div>
+            <div id="maps-link-container" class="button maps-button"></div>
+            <div id="trip-link-container" class="button trip-button"></div>
+        </div>
+        <div class="image-container">
+            <button id="prev-image" onclick="changeImage(-1)">❮</button>
+            <img id="wonder-image"/>
+            <button id="next-image" onclick="changeImage(1)">❯</button>
+        </div>
+        <button onclick="goBack()" class="button back-button">Go Back</button>
+
+    </section>
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+    integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <script src="wonder.js"></script>
+</body>
+</html>

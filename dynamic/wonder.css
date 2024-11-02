@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.wonder-page{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+/*
+.wonder-page > img{
+    width:70%;
+    height: auto
+}*/
+.center-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width:100%;
+    padding: 10px 30px;
+    gap:10px;
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    padding:20px;
+}
+.button{
+    height: 35px;
+    padding: 10px 25px;
+    border-radius: 100px;
+    font-weight: bold;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+}
+.wiki-button{
+    background-color: #040316;
+}
+.brit-button{
+    background-color: #0a0f53;
+}
+.maps-button{
+    background-color: #dd4b3e;
+}
+
+.trip-button{
+    background-color: #34e0a1;
+}
+
+.wiki-button a, .brit-button a, .maps-button a{
+    color: white;
+}
+.trip-button a{
+    color:#000;
+}
+.wiki-button:hover, .brit-button:hover, .maps-button:hover, .trip-button:hover, .back-button:hover {
+    opacity: 0.7;
+    }
+.back-button{
+    color: white;
+    background-color: black;
+}
+.back-button:hover{
+    color: white;
+    background-color: black;
+}
+.image-container {
+    width: 70%;
+}
+.image-container > img{
+    width: 100%;
+    height: auto;
+}
+#prev-image, #next-image {
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#next-image {
+    right: 222px;
+    border-radius: 3px 0 0 3px;
+}
+
+#prev-image:hover, #next-image:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*
+.wiki-button a, .brit-button a, .maps-button a, .trip-button a {
+    display: block;
+    padding: 10px 20px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+}*/
